@@ -9,13 +9,13 @@
 	<body>
 		<div id="corpo">
 		<div id="bloco">
-			<iframe class="topo" src="/item/login/"></iframe>
+			<iframe class="topo" src="/login/"></iframe>
 			<br><br>
 
-			<iframe class="topomenu" src="/item/menu/"></iframe>
+			<iframe class="topomenu" src="/menu/"></iframe>
 
 			<div class="busca">
-				<form method="GET" action="/item/buscar/">
+				<form method="GET" action="/buscar/">
 					{{ f.Buscar }}
 					<input class="botao" type="submit" value=""/>
 				</form>
@@ -35,7 +35,7 @@
 			
 			<div class="cad2">
                     <h1>Cadastro de Pessoa Jurídica</h1>
-          		<form id="cad" method="POST" action="/item/ncadastro2/">
+          		<form id="cad" method="POST" action="/ncadastro2/">
                	{% csrf_token %}
 	    			<table class="cad">
 	             	{% for o in form %}
@@ -87,7 +87,7 @@
 			</div>
 		
 		<br><br><br><br><br><br>
-		<iframe class="roda" src="/item/rod/"></iframe>
+		<iframe class="roda" src="/rod/"></iframe>
 		</div>
 		</div>
 	</body>

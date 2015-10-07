@@ -1,4 +1,3 @@
-{% if plt %}
 {% load staticfiles %}
 <!DOCTYPE html>
 <html>
@@ -10,13 +9,13 @@
 	<body>
 		<div id="corpo">
 		<div id="bloco">
-			<iframe class="topo" src="/item/login/"></iframe>
+			<iframe class="topo" src="/login/"></iframe>
 			<br><br>
 
-			<iframe class="topomenu" src="/item/menu/"></iframe>
+			<iframe class="topomenu" src="/menu/"></iframe>
 
 			<div class="busca">
-				<form method="GET" action="/item/buscar/">
+				<form method="GET" action="/buscar/">
 					{{ form.Buscar }}
 					<input class="botao" type="submit" value=""/>
 				</form>
@@ -105,12 +104,8 @@
 	        		{% endfor %}
 				</div>
 			</div>
-			
-		{% else %}
-			<p>Nenhum item disponivel.</p>
-		{% endif %}
 		<br><br><br><br><br><br>
-		<iframe class="roda" src="/item/rod/"></iframe>
+		<iframe class="roda" src="/rod/"></iframe>
 		</div>
 		</div>
 	</body>
